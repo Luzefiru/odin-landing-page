@@ -75,3 +75,11 @@ section.quote {
     font-size: 48px;
     font-weight: 800;
 }
+
+button.sign-up {
+    background-color: #3882F6;
+    color: white;
+    padding: 0.5em 1.25em;
+    border-radius: 8px;
+    border: none;
+}
