@@ -20,13 +20,15 @@ body {
 }
 
 header {
-    padding: 1rem;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     gap: 1em;
+}
+
+header > * {
+    padding-top: 1rem;
 }
 
 header .header-logo-text {
