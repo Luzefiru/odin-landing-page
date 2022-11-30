@@ -19,6 +19,11 @@ body {
     padding: 0 10%;
 }
 
+section.information,
+section.quote {
+    padding: 0 20%;
+}
+
 header {
     height: 5rem;
 
@@ -49,7 +54,6 @@ section.hero {
     align-content: space-between;
 }
 
-
 .hero-left {
     flex: 4;
     padding-right: 4rem;
@@ -79,6 +83,22 @@ section.information {
 
 section.quote {
     height: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+
+    margin-bottom: 1rem;
+}
+
+.quote-author {
+    align-self: flex-end;
 }
 
 section.cta {
@@ -113,4 +133,10 @@ button.sign-up {
     padding: 0.5em 1.25em;
     border-radius: 8px;
     border: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
