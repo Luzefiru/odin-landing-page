@@ -79,10 +79,42 @@ section.hero {
 
 section.information {
     height: 40rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-grid {
+    margin-top: 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 10rem;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-image {
+    width: 15rem;
+    height: auto;
+    margin-bottom: 2rem;
+}
+
+.card-subtext {
+    text-align: center;
 }
 
 section.quote {
-    height: 25rem;
+    height: 20rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -146,6 +178,11 @@ section.quote {
 
 .hero-left .hero-heading {
     font-size: 48px;
+    font-weight: 800;
+}
+
+.information h1 {
+    font-size: 36px;
     font-weight: 800;
 }
 
