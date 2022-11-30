@@ -20,15 +20,13 @@ body {
 }
 
 header {
+    height: 5rem;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     gap: 1em;
-}
-
-header > * {
-    padding-top: 1rem;
 }
 
 header .header-logo-text {
@@ -44,20 +42,51 @@ header .header-link {
 }
 
 section.hero {
-    height: 25vh;
+    height: 30rem;
 
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    align-content: space-between;
 }
 
+
 .hero-left {
-    flex: 1 1 0%;
+    flex: 4;
+    padding-right: 4rem;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero div.container-hero-img {
+    flex: 1;
+
+    margin-left: auto;
+}
+
+.hero-subheading {
+    margin-bottom: 1rem;
 }
 
 .hero-img {
-    max-width: 25%;
-    margin-right: auto;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+section.information {
+    height: 40rem;
+}
+
+section.quote {
+    height: 25rem;
+}
+
+section.cta {
+    height: 30rem;
+}
+
+footer {
+    height: 5rem;
 }
 
 /* aesthetics */
