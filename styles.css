@@ -6,6 +6,11 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+header .header-logo-text,
+.information h1 {
+    font-family: monospace, Courier, 'Courier New';
+}
+
 /* alignments */
 
 body {
@@ -31,12 +36,11 @@ header {
     justify-content: space-between;
     align-items: center;
 
-    gap: 1em;
+    gap: 2em;
 }
 
 header .header-logo-text {
-    font-size: 24px;
-
+    font-size: 30px;
     flex: 1 1 auto;
 }
 
@@ -56,7 +60,6 @@ section.hero {
 
 .hero-left {
     flex: 4;
-    padding-right: 4rem;
 
     display: flex;
     flex-wrap: wrap;
@@ -64,6 +67,7 @@ section.hero {
 
 .hero div.container-hero-img {
     flex: 1;
+    padding-left: 4rem;
 
     margin-left: auto;
 }
@@ -74,6 +78,7 @@ section.hero {
 
 .hero-img {
     max-width: 500px;
+    min-width: 500px;
     border-radius: 8px;
 }
 
@@ -87,7 +92,7 @@ section.information {
 }
 
 .card-grid {
-    margin-top: 4rem;
+    margin-top: 3rem;
 
     display: flex;
     justify-content: space-between;
@@ -104,13 +109,13 @@ section.information {
 }
 
 .card-image {
-    width: 15rem;
-    height: auto;
+    max-width: 15rem;
     margin-bottom: 2rem;
 }
 
 .card-subtext {
     text-align: center;
+    font-style: italic;
 }
 
 section.quote {
@@ -142,7 +147,7 @@ section.cta {
 }
 
 .container-cta {
-    background-color: #3882F6;
+    background-color: #2344F3;
     width: 80em;
     height: 10em;
 
@@ -156,29 +161,41 @@ section.cta {
 }
 
 .cta-text {
-    color: white;
+    color: whitesmoke;
 }
 
 footer {
     height: 5rem;
+    background-color: #000F17;
+    color: white;
 }
 
 /* aesthetics */
 
-header,
-section.hero,
-footer {
-    background-color: #1F2937;
-    color: white;
+header {
+    background-color: whitesmoke;
+    color: black;
+}
+
+section.hero {
+    background-image: url(./img/hero-wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
 section.quote {
-    background-color: #E5E7EB;
+    background-color: #000F17;
+    color: white;
 }
 
-.hero-left .hero-heading {
-    font-size: 48px;
+.hero-heading {
+    font-size: 44px;
     font-weight: 800;
+}
+
+.hero-heading,
+.hero-subheading {
+    color: whitesmoke;
 }
 
 .information h1 {
@@ -190,11 +207,12 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 
 button.sign-up {
-    background-color: #3882F6;
-    color: white;
+    background-color: #2344F3;
+    color: whitesmoke;
     padding: 0.5em 1.25em;
     border-radius: 8px;
     border: none;
@@ -203,6 +221,12 @@ button.sign-up {
 }
 
 .container-cta button {
-    border: white solid 2px;
+    border: whitesmoke solid 2px;
     padding: 0.5em 4em;
+}
+
+.hero-left {
+    background-color: hsla(0, 0%, 0%, 0.5);
+    padding: 2.55rem;
+    border-radius: 12px;
 }
